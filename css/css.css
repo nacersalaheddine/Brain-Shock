@@ -1,0 +1,293 @@
+@import url("overlay.css");
+@import url("nav-skins.css");
+@font-face {
+    font-family: economica;
+    src: url(../res/Economica-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+	font-family:economica;
+	margin:0;
+	padding:0;
+}
+
+/* Set a background color */
+
+body {
+
+    background-image: url("../res/textures/brick-wall-dark.png");
+    /*
+	background-color: #474e5d;
+    background-image: url("../res/textures/carbon-fibre.png");
+    background-image: url("../res/textures/cartographer.png");
+    background-image: url("../res/textures/diagmonds.png");
+    */
+    background-repeat: repeat;
+    background-color: #9dbcdd;
+	width: 100%;
+	height:100%;
+	border-top:1px solid green;
+	border-right:1px solid green;
+	border-left:1px solid green;
+	
+}
+/*
+div.main-container {
+    width: 100%;
+	height:100%;
+	border:1px solid red;
+    
+	height: 500px;
+	background-color: #232323;
+	opacity: 0.9;
+   
+}*/
+
+
+/*********************************************************************************/
+/*navigation menu section*/
+i.arrow-down {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: economica;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #202020;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+a.selected {
+    background-color: #aaa;
+}
+
+.dropdown-content a:hover {
+    background-color: #aaa;
+}
+
+.dropdown-content a:active {
+    background-color: #999;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.mnemonics {
+	float: right;
+	opacity: 0.8;
+}
+
+.informations {
+	color: red;
+}
+/*********************************************************************************/
+/*opration section*/
+
+.container {
+	height:100%;
+	width: 100%;
+	border-top:1px solid green;
+    opacity: 1;
+	text-align:center;
+    position: relative;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white
+}
+
+.content {
+	text-align:center;
+	border-bottom:1px solid green;
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 0px;
+}
+
+div#operation {
+
+    border-radius: 0px;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: white;
+}
+
+
+div.input-container {
+    position: relative;
+    margin-top: 10px;
+    background-color: #353535;
+	width: 100%;
+	height:100%;	
+}
+
+input[type=text] {
+	
+	width:100%;	   
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    font-size: 3rem;
+    background-color: white;
+    background-image: url(../res/brain.svg);
+    background-position: 1rem 2rem;
+	background-size:3rem;
+    background-repeat: no-repeat;
+    padding: 2rem 2rem 1.5rem 5.5rem;
+    -webkit-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+    opacity: 0.7;
+	
+}
+
+input[type=text]:focus {
+    background-color: #f5fefe;
+}
+
+/*********************************************************************************/
+/*section*/
+
+.pill {
+    background-color: #333;
+    border: none;
+    border: 1px solid #333;
+    margin: 10px;
+    opacity: 0.9;
+}
+
+
+/*********************************************************************************/
+/*section*/
+
+
+.item {
+    text-align: center;
+    position: relative;
+    border-right: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+    border-left: 1px solid lightblue;
+	
+}
+
+.item h2 {
+    position: absolute;
+    line-height: 9.5rem;
+    font-size: 40px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.svg-circle {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+    stroke-dasharray: 440;
+    /* this value is the pixel circumference of the circle */
+    stroke-dashoffset: 440;
+    transition: all 1s linear;
+}
+
+/*********************************************************************************/
+/*section*/
+
+
+.button {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	width:200px;
+    cursor: pointer;
+    border:1px solid white;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	font-weight:bold;
+	/*font-family:consolas;*/
+}
+.success-btn{
+	    background:#00BAC9;
+}
+
+.success-btn:hover{
+	    background:#2A7874;
+		transition:0.5s;
+}
+.danger-btn{
+	    background:#f44336;
+		transition:0.5s;
+}
+.danger-btn:hover {
+  background-color: #AA0E17;
+  color: white;
+
+}
+
+/*********************************************************************************/
+/*end*/
+
+/* Media queries - Responsive on screens less than 600px wide */
+
+@media all and (max-width: 600px) {
+.success-btn{
+	     border-bottom:none;
+
+ } 
+ 
+.danger-btn{
+	     border-top:none;
+		
+ }
+ 
+ 
+}

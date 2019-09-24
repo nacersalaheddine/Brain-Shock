@@ -1,0 +1,145 @@
+<!--   <?php
+require_once("./inc/userInfo.php");
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain-Shock</title>
+    <link rel="icon" href="./res/icon.png" />
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <script  src="./js/calculator-api.js" ></script>
+	<script  src="./js/fontawesome.js" ></script>
+</head>
+
+<body>
+
+        <div id="myNav" class="overlay">
+            <a href="#" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <a id="text">
+
+                </a>
+            </div>
+        </div>
+        <div id="myInfo" class="overlay">
+            <a href="#" class="closebtn">&times;</a>
+            <div class="overlay-content">
+
+            <!--
+          <div class="pill" >
+            <h5>My IP :<span class="informations"><?php echo $user->get_ip(); ?></span></h5>
+            <h5>User OS(Operating System):<span class="informations"><?php echo PHP_OS; ?></span></h5>
+            <h5>Server OS(Operating System):<span class="informations"><?php echo php_uname('a'); ?></span></h5>
+            <h5>Referrer:<span class="informations"><?php echo $user->get_referrer(); ?></span></h5>
+            <h5>Browser:<span class="informations"><?php echo $user->get_user_browser(); ?></span></h5>
+          </div>
+			-->
+
+            </div>
+        </div>
+        <div class="navbar easy">
+            <a href="#home">HOME</a>
+			<a href="#history"><s>PROGRESS HISTORY</s></a>
+            <div class="dropdown">
+                <button class="dropbtn">
+					<span style="font-family: economica;" id="dropbtn-text">LEVEL/EASY</span>
+						<i class="arrow-down"></i>
+				</button>
+                <div class="dropdown-content">
+                    <a id="easy" class="selected animated pulse infinite" href="#easy">Ea<u>s</u>y
+					<span class="mnemonics">CTRL+S</span>
+					</a>
+                    <a id="normal" href="#normal">N<u>o</u>rmal
+					<span class="mnemonics">CTRL+O</span>
+					</a>
+                    <a id="hard" href="#hard">
+                        <u>H</u>ard
+                        <span class="mnemonics">CTRL+H</span>
+                    </a>
+                    <a id="expert" href="#expert">
+                        <u>E</u>xpert
+                        <span class="mnemonics">CTRL+E</span>
+                    </a>
+                    <a id="genius" href="#genius">
+                        <u>G</u>enius
+                        <span class="mnemonics">CTRL+G</span>
+                    </a>
+                    <a id="mgenius" href="#megagenius">
+                        <u>M</u>ega Genius
+                        <span class="mnemonics">CTRL+M</span>
+                    </a>
+                    <a id="customized" style="text-decoration:line-through;" href="#customized">
+                        <u>C</u>ustomized
+                        <span class="mnemonics">CTRL+SHIFT+C</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#info" id="myInfo-btn"><s>MY INFO</s></a>
+            <a id="about-btn" href="#about">ABOUT</a>
+            <a href="#help"><s>?</s></a>
+            <a href="#lang" style="float:right"><s>ARA</s></a>
+        </div>
+
+        <div class="container">
+            <div class="content easy">
+
+                <div style="border:1px solid lightblue;">
+                    <h2 style="border-bottom:1px solid lightblue;">Welcome to Brain Shock
+                        <img id="result-status" src="res/correct-sign.svg" width="25" alt="sign">
+                    </h2>
+					<div style="position:relative;width:100%;border-bottom:1px solid lightblue;padding:2rem;">
+						<h2 id="lost-points" style="padding:0 5px;display:inline;border-right:1px solid red;border-bottom:1px solid red;color:red" title="lost points">0</h2>
+						<h2 style="display:inline;margin:0 5px;">
+							<u id="total-points" title="total points">0</u>
+						</h2>	
+						<h2 id="gained-points" style="padding:0 5px;display:inline;border-left:1px solid red;border-bottom:1px solid red;color:lightgreen" title="gained points">0</h2>	
+					</div>
+
+					<div style="padding:1rem;">
+									
+						<button class="button success-btn" id="start-pause-game" title="Ctrl+P"><i class="fas fa-play"></i>&nbsp;&nbsp;Start Game </button>
+						<button class="button danger-btn" id="reset-game" title="Ctrl+Enter" disabled><i class="fas fa-undo"></i>&nbsp;&nbsp;Reset Game</button>
+
+					</div>
+	
+                </div>
+                <div class="item">
+
+                    <h2 id="game-timer">10</h2>
+
+                    <svg class="svg-circle" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+
+					<g>
+					  <title>Game Timer</title>
+					  <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="5"
+						stroke="#F59813" fill="rgba(255, 255, 255, 0.2)">
+					  </circle>
+					</g>
+				  </svg>
+
+                </div>
+				<div id="operation"> </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+     
+            <input id="answer" type="text" maxlength="20" name="answer" placeholder="CTRL+C(Clear)" />
+
+        </div>
+
+
+
+
+
+
+
+    <script  src="./js/game.js"></script>
+	<script  src="./js/about.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+some game ground rules
+
+
+a-easy level
+1-operations +
+2-operands range min = 0, max = 20
+3-operands number  min = 2, max = 2
+
+
+b-normal level
+1-operations + -
+2-operands range min = -10, max = 40
+3-operands number  min = 2, max = 2
+
+
+c-hard level
+1-operations + - *
+2-operands range min = -20, max = 50
+3-operands number  min = 2, max = 3
+
+
+d-expert level
+1-operations + - * /
+2-operands range min = -40, max = 99
+3-operands number  min = 2, max = 4
+
+
+e-genius
+1-operations + - * /
+2-operands range min = -999, max = 999
+3-operands number  min = 2, max = 4
+
+
+f-mega genius
+1-operations + - * /
+2-operands range min = -9999, max = 9999
+3-operands number  min = 4, max = 6
+
+
+
+Important !
+Considiration of operations prieority
+
+1-calculations goes from left to right
+2-Apply PEMDAS rules . 
+

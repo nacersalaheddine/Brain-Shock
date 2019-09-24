@@ -1,0 +1,29 @@
+.easy {
+  background-color: rgba(42, 43, 44, 0.7);
+  color: #fff;
+}
+
+.normal {
+  background-color: rgba(37, 223, 161, 0.7);
+  color: #fff;
+}
+
+.hard {
+  background-color: rgba(172, 88, 206, 0.7);
+  color: #fff;
+}
+
+.expert {
+  background-color: rgba(240, 93, 100, 0.7);
+  color: #fff;
+}
+
+.genius {
+  background-color: rgba(37, 195, 223, 0.7);
+  color: #fff;
+}
+
+.mgenius {
+  background-color: rgba(235, 137, 25, 0.7);
+  color: #fff;
+}
